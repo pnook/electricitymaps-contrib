@@ -15,7 +15,7 @@ module.exports = {
     bundle: './src/index.jsx',
   },
   resolve: {
-    extensions: ['.jsx', '.tsx', '...'], // ... is for the defaults
+    extensions: ['.jsx', '.tsx', 'js', '...'], // ... is for the defaults
   },
   module: {
     rules: [

@@ -4,7 +4,7 @@ import Cookies from 'js-cookie';
 
 import { isLocalhost } from './environment';
 import thirdPartyServices from '../services/thirdparty';
-import { isRemoteParam } from './featureFlags';
+import { isRemoteParam } from './feature-flags';
 
 function getToken() {
   if (ELECTRICITYMAP_PUBLIC_TOKEN === '%SNOWPACK_PUBLIC_ELECTRICITYMAP_PUBLIC_TOKEN%') {

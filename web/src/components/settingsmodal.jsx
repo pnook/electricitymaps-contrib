@@ -14,7 +14,7 @@ import {
 } from '../hooks/router';
 import { LANGUAGE_NAMES } from '../helpers/constants';
 
-import { aggregatedViewFFEnabled } from '../helpers/featureFlags';
+import { aggregatedViewFFEnabled } from '../helpers/feature-flags';
 import Toggle from './toggle';
 
 import styled from 'styled-components';

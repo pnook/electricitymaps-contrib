@@ -30,7 +30,7 @@ import MobileLayerButtons from '../components/mobilelayerbuttons';
 import HistoricalViewIntroModal from '../components/historicalviewintromodal';
 import ResponsiveSheet from './responsiveSheet';
 import { RetryBanner } from '../components/retrybanner';
-import { aggregatedViewFFEnabled } from '../helpers/featureFlags';
+import { aggregatedViewFFEnabled } from '../helpers/feature-flags';
 
 const CLIENT_VERSION_CHECK_INTERVAL = 15 * 60 * 1000; // 15 minutes
 

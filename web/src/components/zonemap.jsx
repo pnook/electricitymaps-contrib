@@ -7,7 +7,7 @@ import { isEmpty } from '../helpers/isEmpty';
 import { debounce } from '../helpers/debounce';
 import { getCO2IntensityByMode } from '../helpers/zonedata';
 import { ZoomControls } from './zoomcontrols';
-import { aggregatedViewFFEnabled } from '../helpers/featureFlags';
+import { aggregatedViewFFEnabled } from '../helpers/feature-flags';
 import { useAggregatesEnabled } from '../hooks/router';
 
 const interactiveLayerIds = ['zones-clickable-layer'];
