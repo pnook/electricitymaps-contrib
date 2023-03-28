@@ -23,11 +23,15 @@ function LegendItem({
 }
 
 export default function Co2Legend(): ReactElement {
-  const { __ } = useTranslation();
+  const { __, i18n } = useTranslation();
   const co2ColorScale = useCo2ColorScale();
+  const isSmoothieMap = i18n.language === 'smoothie';
   return (
     <div>
-      <LegendItem label={__('legends.carbonintensity')} unit="gCO₂eq/kWh">
+      <LegendItem
+        label={__('legends.carbonintensity')}
+        unit={isSmoothieMap ? 'calories/100g' : 'gCO₂eq/kWh'}
+      >
         <HorizontalColorbar colorScale={co2ColorScale} ticksCount={6} id={'co2'} />
       </LegendItem>
     </div>

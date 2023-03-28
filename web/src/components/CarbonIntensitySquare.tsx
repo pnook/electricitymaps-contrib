@@ -30,7 +30,8 @@ interface CarbonIntensitySquareProps {
 }
 
 function CarbonIntensitySquare({ intensity, withSubtext }: CarbonIntensitySquareProps) {
-  const { __ } = useTranslation();
+  const { __, i18n } = useTranslation();
+  const isSmoothieMap = i18n.language === 'smoothie';
   const co2ColorScale = useCo2ColorScale();
   const styles = useSpring({ backgroundColor: co2ColorScale(intensity) });
 
@@ -53,7 +54,11 @@ function CarbonIntensitySquare({ intensity, withSubtext }: CarbonIntensitySquare
       </div>
       <div className="mt-2 flex flex-col items-center">
         <div className="text-sm">{__('country-panel.carbonintensity')}</div>
-        {withSubtext && <div className="text-sm">(gCO₂eq/kWh)</div>}
+        {withSubtext && (
+          <div className="text-sm">
+            {isSmoothieMap ? '(calories/100g)' : '(gCO₂eq/kWh)'}
+          </div>
+        )}
       </div>
     </div>
   );

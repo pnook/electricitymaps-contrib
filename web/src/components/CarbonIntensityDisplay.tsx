@@ -1,4 +1,5 @@
 import { useCo2ColorScale } from 'hooks/theme';
+import { useTranslation } from 'translation/translation';
 
 function Square({ co2Intensity }: { co2Intensity: number }) {
   const co2ColorScale = useCo2ColorScale();
@@ -23,11 +24,14 @@ export function CarbonIntensityDisplay({
   withSquare?: boolean;
 }) {
   const intensityAsNumber = co2Intensity || 0;
+  const { __, i18n } = useTranslation();
+  const isSmoothieMap = i18n.language === 'smoothie';
   return (
     <>
       {withSquare && <Square co2Intensity={intensityAsNumber} />}
       <p className={className}>
-        <b>{Math.round(intensityAsNumber) || '?'}</b>&nbsp;gCO₂eq/kWh
+        <b>{Math.round(intensityAsNumber) || '?'}</b>&nbsp;
+        {isSmoothieMap ? 'calories/100g' : 'gCO₂eq/kWh'}
       </p>
     </>
   );

@@ -60,4 +60,5 @@ export const languageNames = {
   'zh-CN': '中文 (Mainland China)',
   'zh-HK': '中文 (Hong Kong)',
   'zh-TW': '中文 (Taiwan)',
+  smoothie: 'Smoothie',
 };
