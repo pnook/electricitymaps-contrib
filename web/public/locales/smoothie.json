@@ -27,7 +27,7 @@
   },
   "onboarding-modal": {
     "view1": {
-      "subtitle": "Mapping the climate impact of electricity"
+      "subtitle": "Mapping the caloric content of smoothies"
     },
     "view2": {
       "header": "See how much CO₂ is emitted to produce your electricity, in real-time.",
@@ -71,7 +71,7 @@
     "title": "Display smoothies from the past"
   },
   "left-panel": {
-    "zone-list-header-title": "Climate Impact by Area",
+    "zone-list-header-title": "Health Impact by Area",
     "zone-list-header-subtitle": "Ranked by calorie intensity of electricity consumed (calories/100g)",
     "search": "Search areas"
   },
@@ -83,7 +83,7 @@
       "monthly": "Calorie intensity in the last year",
       "yearly": "Calorie intensity in the last 5 years"
     },
-    "emissions": { "default": "Emissions in the last %1$s" },
+    "emissions": { "default": "Calories in the last %1$s" },
     "emissionsorigin": { "default": "Origin of calories in the last %1$s" },
     "emissionsproduction": { "default": "Origin of calories in the last %1$s" },
     "electricityorigin": { "default": "Origin of smoothie in the last %1$s" },
